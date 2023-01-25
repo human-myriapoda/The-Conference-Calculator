@@ -9,3 +9,6 @@
 3. On the top menu, click on `File`.
 4. Click on `Options`.
 5. In `Accounts`, connect to your Github account.
+6. Close that window.
+7. Click on `Current repository`, and select `The-Conference-Calculator`.
+8. TODO
