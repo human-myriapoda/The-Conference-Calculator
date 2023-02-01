@@ -62,4 +62,24 @@ conda activate ConferenceCalculator
 
 ---
 ## 5. Test that everything is working
+1. On the left-hand-side menu (VS Code Studio), click on `Explorer` (file icon, first icon).
+2. Create a new file, e.g. `u_r_amazing.py`. Write whatever you want in it.
+3. Now, the file should appear GREEN with a 'U' symbol $\rightarrow$ this means you **created** an new file. Similarly, if your file is ORANGE with a 'M' symbol, it means you've **modified** the file and if your file is RED, it means you've `deleted` the file (or removed something from the file).
+4. On the left-hand-side menu, click on `Source Control` (branch icon; there should be a number on it - the number of changes you did). 
+5. You can select `Push & Sync` and click `Always` on the pop-up window. This means that your changes will go on Github desktop.
+6. Open Github desktop; you should see the changes you just made.
+7. On the bottom-left, there a box with `Summary (required)` and `Description`. Write a short description of the changes you made in 'Summary' and click on `Commit to main`.
+8. Now, in the middle panel, a new BLUE box should appear; with the option to `Push origin`. Click on it; this will 'publish' your changes to the Github repository so that everyone can see them! If you want to make sure it worked, refresh the Github webpage. 
+9. *Note* $\rightarrow$ if someone made a change and it's not on your local computer yet, the BLUE box will appear with `Pull origin`. Click on it as often as possible to have the latest version.
+10. *Note* $\rightarrow$ on the top menu of Github desktop, you can refresh the app to find new changes. 
 
+>You should be setted up now and ready to start working on the code! Hopefully there were not too many problems :D 
+
+---
+## 6. Additional notes
+- Avoid working on the same code at the same time with someone else. It might create multiple versions of the same document. 
+- If you substantially change a file, make sure to leave a long comment when you commit.
+- If you use someone else's code (from the internet), make sure to note the reference.
+- If you want to create a folder in the repository, you must add a file inside of it.
+- Use a `.py` (Python) file to write source code (coding itself) and use a `.ipynb` (Jupyter Notebook) to execute your functions (e.g. produce plots). If you're new to coding, start with a `.ipynb` file.
+- Leave comments in your code! It helps understand it :)
