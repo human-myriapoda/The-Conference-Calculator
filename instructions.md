@@ -73,7 +73,7 @@ conda activate ConferenceCalculator
 9. *Note* $\rightarrow$ if someone made a change and it's not on your local computer yet, the BLUE box will appear with `Pull origin`. Click on it as often as possible to have the latest version.
 10. *Note* $\rightarrow$ on the top menu of Github desktop, you can refresh the app to find new changes. 
 
->You should be setted up now and ready to start working on the code! Hopefully there were not too many problems :D 
+>You should be set up now and ready to start working on the code! Hopefully there were not too many problems :D 
 
 ---
 ## 6. Additional notes
