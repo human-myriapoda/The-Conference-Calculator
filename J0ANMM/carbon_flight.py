@@ -51,8 +51,6 @@ class CarbonFlight(Carbon):
         dist_km = self.real_distance(iata_orig, iata_dest)
         gr_co2_person = self.calculate_co2(dist_km, pax_class, trip_type)
 
-
-        print(gr_co2_person)
         return int(gr_co2_person)
 
 
