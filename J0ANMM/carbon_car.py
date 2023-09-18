@@ -13,11 +13,11 @@ class CarbonCar(Carbon):
         self.petrol_well_to_tank = 2.3+0.5 #kg CO2/l
 
 
-    def calculate_co2(self, dist_km, fuel_type, fuel_consumption, electricity_consumption, electricity_country_code, pax_in_car, trip_type):
+    def calculate_co2(self, dist_km, fuel_type, fuel_consumption = 0.45, electricity_consumption = 28.0, electricity_country_code, pax_in_car, trip_type):
         """Calculate the CO2 eq emission of a ride by car."""
 
         if fuel_type == 'electric':
-            # avg_consumption = 19.0 #kWh/100km
+            # avg_consumption = 28.0 #kWh/100km
 
             kWh_per_100km = int(electricity_consumption)/0.83 #We consider a grid-to-battery conversion efficiency of 83%: http://publications.lib.chalmers.se/records/fulltext/179113/local_179113.pdf
 
