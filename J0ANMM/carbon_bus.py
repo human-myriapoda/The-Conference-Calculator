@@ -1,9 +1,9 @@
 "carbon-bus.py calculates the emissions of passengers taking a bus"
 
-try:
-    from carbon import Carbon
-except ImportError:
-    from results.carbon_calculator_git.carbon import Carbon #complete path inside Django project needed to make it work in Django Framework
+#try:
+from  J0ANMM.carbon import Carbon
+#except ImportError:
+#    from results.carbon_calculator_git.carbon import Carbon #complete path inside Django project needed to make it work in Django Framework
 
 class CarbonBus(Carbon):
     """Class to calculate CO2 emmissions in a bus."""

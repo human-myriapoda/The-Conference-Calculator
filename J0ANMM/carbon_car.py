@@ -1,9 +1,9 @@
 "carbon-car.py calculates the emissions of passengers taking a car"
 
-try:
-    from carbon import Carbon
-except ImportError:
-    from results.carbon_calculator_git.carbon import Carbon #complete path inside Django project needed to make it work in Django Framework
+#try:
+from J0ANMM.carbon import Carbon
+#except ImportError:
+#    from results.carbon_calculator_git.carbon import Carbon #complete path inside Django project needed to make it work in Django Framework
 
 class CarbonCar(Carbon):
     """Class to calculate CO2 emmissions in a car."""
@@ -13,11 +13,11 @@ class CarbonCar(Carbon):
         self.petrol_well_to_tank = 2.3+0.5 #kg CO2/l
 
 
-    def calculate_co2(self, dist_km, fuel_type, fuel_consumption = 0.45, electricity_consumption = 28.0, electricity_country_code, pax_in_car, trip_type):
+    def calculate_co2(self, dist_km, fuel_type, pax_in_car, trip_type,fuel_consumption=7.5, electricity_consumption=18.0, electricity_country_code='UK'):
         """Calculate the CO2 eq emission of a ride by car."""
 
         if fuel_type == 'electric':
-            # avg_consumption = 28.0 #kWh/100km
+            # avg_consumption = 18.0 #kWh/100km
 
             kWh_per_100km = int(electricity_consumption)/0.83 #We consider a grid-to-battery conversion efficiency of 83%: http://publications.lib.chalmers.se/records/fulltext/179113/local_179113.pdf
 
@@ -33,6 +33,7 @@ class CarbonCar(Carbon):
                                 'petrol': self.petrol_well_to_tank,
                                 }
 
+            #fuel_consumption in litres per 100 km
             gr_co2_driving = int( kgCO2_per_litre[fuel_type] * float(fuel_consumption) * 10.0 )
 
         else:
